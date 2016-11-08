@@ -1,0 +1,20 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  back:
+    build: aquacontrol-back
+    image: yovasx2/aquacontrol-back
+    volumes:
+      - ./aquacontrol-back:/app
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+  front:
+    build: aquacontrol-front
+    image: yovasx2/aquacontrol-front
+    volumes:
+      - ./aquacontrol-front:/app
+    ports:
+      - "3000:3000"
