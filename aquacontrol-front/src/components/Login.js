@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Link } from 'react-router-dom'
 
 class Login extends Component {
   render() {
@@ -19,7 +20,9 @@ class Login extends Component {
         </Row>
         <Row center="xs">
           <Col xs={12}>
-            <RaisedButton label="Iniciar sesión" primary={true}/>
+            <Link to="/orders/new">
+              <RaisedButton label="Iniciar sesión" primary={true}/>
+            </Link>
           </Col>
         </Row>
       </Grid>
