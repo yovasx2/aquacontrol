@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Login from './components/Login';
-import Menu from './components/Menu';
 import OrderNew from './components/OrderNew';
 import OrderList from './components/OrderList';
 import EmployeeList from './components/EmployeeList';
