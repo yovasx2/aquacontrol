@@ -5,7 +5,7 @@ export default class BottleList extends Component {
   render() {
     return (
       <div>
-        <Menu></Menu>
+        <Menu />
       </div>
     );
   }

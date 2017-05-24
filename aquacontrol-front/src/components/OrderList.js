@@ -5,7 +5,7 @@ export default class OrderList extends Component {
   render() {
     return (
       <div>
-        <Menu></Menu>
+        <Menu />
       </div>
     );
   }
